@@ -42,7 +42,7 @@ class DMFindingGameViewController: UIViewController {
      3.3 Call the `updateTargetLetterLabel` and `updateLetterButtons` functions.
      */
     func newRound() {
-        var randomIndex: String = letters.randomElement() ?? "Letter"
+        let randomIndex: String = letters.randomElement() ?? "Letter"
         
         targetLetter = randomIndex
         randomLetters = generateRandomLetters(numLetters: lettersLabel.count)
@@ -112,7 +112,7 @@ class DMFindingGameViewController: UIViewController {
      8.1 Update the `scoreLabel`'s text to be the `score`.
      */
     func updateScoreLabel() {
-        var string = String(score)
+        let string = String(score)
         scoreLabel.text = string
     }
     
