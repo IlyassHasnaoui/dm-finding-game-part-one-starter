@@ -16,7 +16,10 @@ class DMFindingGameViewController: UIViewController {
      2.1 Create IBOutlets for the target letter label and the score label.
      2.2 Create an IBOutlet collection for the letter buttons.
      */
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var targetLetterLabel: UILabel!
     
+    @IBOutlet var lettersLabel: [UIButton]!
     /**
      These variables will help us with the gameplay. You do not need to modify this code.
      */
@@ -39,9 +42,13 @@ class DMFindingGameViewController: UIViewController {
      3.3 Call the `updateTargetLetterLabel` and `updateLetterButtons` functions.
      */
     func newRound() {
+        var randomIndex: String = letters.randomElement() ?? "Letter"
         
+        targetLetter = randomIndex
+        randomLetters = generateRandomLetters(numLetters: lettersLabel.count)
+        updateTargetLetterLabel()
+        updateLetterButtons()
     }
-    
     /**
      4.1 Return an array of letters. There should be as many letters as `numLetters`.
      The array should include the target letter. The rest of the letters should be random. A letter should show up in the array only once. The order of the letters should be random.
@@ -49,15 +56,29 @@ class DMFindingGameViewController: UIViewController {
      This is a tricky function, but feel free to run the provided test in `DMFindingGameTests` to know if your code is correct. Let your Tech Lead know if you need help. :)
      */
     func generateRandomLetters(numLetters: Int) -> [String] {
-        return []
+        var randomLetterArr: [String] = [targetLetter]
+        
+        while randomLetterArr.count < numLetters {
+            let randomLet = letters.randomElement()!
+            
+            if !randomLetterArr.contains(randomLet) {
+                randomLetterArr.append(randomLet)
+            }
+        }
+        
+        return randomLetterArr.shuffled()
     }
+    //The letters are checked for uniqueness and added to the array directly. The result is then shuffled before returning it.
+    
     
     /**
      5.1 Check if the `selectedLetter` is equal to the `targetLetter` and update the `score` variable accordingly.
      Feel free to run the provided test in `DMFindingGameTests` to know if your code is correct.
      */
     func calculateNewScore(selectedLetter: String) {
-        
+        if selectedLetter == targetLetter {
+            score += 1
+        }
     }
     
     /**
@@ -70,14 +91,15 @@ class DMFindingGameViewController: UIViewController {
      7.1 Update the `targetLetterLabel`'s text to be the `targetLetter`.
      */
     func updateTargetLetterLabel() {
-        
+        targetLetterLabel.text = targetLetterLabel
     }
     
     /**
      8.1 Update the `scoreLabel`'s text to be the `score`.
      */
     func updateScoreLabel() {
-        
+        var string = String(score)
+        scoreLabel.text = string
     }
     
     /**
@@ -85,6 +107,8 @@ class DMFindingGameViewController: UIViewController {
      Hint: `UIButton`s have a `setTitle` function.
      */
     func updateLetterButtons() {
-        
+        for i in 0..<lettersLabel.count{
+            lettersLabel[i].setTitle(randomLetters[i], for: .normal)
+        }
     }
 }
