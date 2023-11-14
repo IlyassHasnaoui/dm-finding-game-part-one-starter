@@ -80,18 +80,32 @@ class DMFindingGameViewController: UIViewController {
             score += 1
         }
     }
+   
     
+    @IBAction func letterButtonTapped(_ sender: UIButton) {
+  
+    
+    if let selectedLetter = sender.titleLabel?.text {
+         calculateNewScore(selectedLetter: selectedLetter)
+         updateScoreLabel()
+     }
     /**
      6.1 Create an IBAction that gets run when the user taps on a letter button.
+     
      6.2 Call the `calculateNewScore` function and pass in the selected letter. Hint: You can get access to the selected letter using the `sender`'s `titleLabel`. Afterwards, call the `updateScoreLabel` function.
+     
+     
+     
      6.3 Call the `newRound` function to start a new round.
      */
-    
+        newRound()
+    }
+
     /**
      7.1 Update the `targetLetterLabel`'s text to be the `targetLetter`.
      */
     func updateTargetLetterLabel() {
-        targetLetterLabel.text = targetLetterLabel
+        targetLetterLabel.text = targetLetter
     }
     
     /**
