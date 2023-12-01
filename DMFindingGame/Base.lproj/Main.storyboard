@@ -18,19 +18,19 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27k-Wd-bui">
-                                <rect key="frame" x="170.66666666666666" y="216.66666666666666" width="48.666666666666657" height="82.666666666666657"/>
+                                <rect key="frame" x="170.66666666666666" y="205.66666666666666" width="48.666666666666657" height="82.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="69"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uki-kH-RTI">
-                                <rect key="frame" x="341.33333333333331" y="99" width="23.666666666666686" height="45.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uki-kH-RTI">
+                                <rect key="frame" x="341" y="90" width="23.666666666666686" height="45.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="B2b-M2-fKy">
-                                <rect key="frame" x="25" y="343" width="335" height="422"/>
+                                <rect key="frame" x="25" y="332" width="335" height="422"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="H5z-Ni-Q92">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="122"/>
@@ -45,7 +45,7 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="1ml-0d-x1B"/>
+                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="SCb-ib-8gG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d0-Hu-jGD">
@@ -58,7 +58,7 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="hD5-qv-i9y"/>
+                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="lF8-u9-KU9"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zci-yO-LiC">
@@ -71,7 +71,7 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Ave-1G-bhv"/>
+                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Slt-P6-Yok"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYh-sM-ma5">
@@ -84,7 +84,7 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="wbl-vs-O5A"/>
+                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="a69-tv-69D"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -102,7 +102,7 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="bU3-gU-88i"/>
+                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="y05-Wb-TCs"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko1-Nx-oxw">
@@ -115,7 +115,7 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="qqz-Vf-fRp"/>
+                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="1dM-15-Cvs"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgZ-pR-unu">
@@ -128,7 +128,7 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Ubl-he-6Ks"/>
+                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="svY-Th-FLS"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHS-JM-lrY">
@@ -141,7 +141,7 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="1cG-nE-pGR"/>
+                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="KmA-Bd-iYS"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -159,7 +159,7 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="XuR-c6-QhF"/>
+                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="CRx-iH-NFq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEe-JX-HJ8">
@@ -172,7 +172,7 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="px9-Se-kpZ"/>
+                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="HM4-zB-0Ts"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGn-SC-NI6">
@@ -185,7 +185,7 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Xqe-KL-N5h"/>
+                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="hOf-Mk-aJe"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCl-er-Vjc">
@@ -198,13 +198,41 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="ED7-UN-Lfz"/>
+                                                    <action selector="letterButtonTapped:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="OEM-K8-qe7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9a-2n-c18">
+                                <rect key="frame" x="264" y="97" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seconds:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9n-sR-4a2">
+                                <rect key="frame" x="232" y="125" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4V-DR-9RE">
+                                <rect key="frame" x="340" y="118" width="23.666666666666742" height="45.666666666666629"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuR-5B-lPj">
+                                <rect key="frame" x="341" y="118" width="23.666666666666742" height="45.666666666666629"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="soI-GB-Rs1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -221,6 +249,7 @@
                     </view>
                     <connections>
                         <outlet property="scoreLabel" destination="uki-kH-RTI" id="aZo-jC-b9P"/>
+                        <outlet property="seconds" destination="DuR-5B-lPj" id="0dq-ad-q8e"/>
                         <outlet property="targetLetterLabel" destination="27k-Wd-bui" id="DpK-Te-qsV"/>
                         <outletCollection property="lettersLabel" destination="vYn-aB-jqC" collectionClass="NSMutableArray" id="zgR-QO-Ju7"/>
                         <outletCollection property="lettersLabel" destination="9d0-Hu-jGD" collectionClass="NSMutableArray" id="tjb-0o-JhN"/>
