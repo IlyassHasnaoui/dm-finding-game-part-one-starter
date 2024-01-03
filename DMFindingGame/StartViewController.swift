@@ -21,9 +21,9 @@ class StartViewController: UIViewController {
         
     }
    
-    @IBAction func startButton(_ sender: UIButton) {
-        let DMFindingGameViewController = DMFindingGameViewController()
-            navigationController?.pushViewController(DMFindingGameViewController, animated: true)
-          
-    }
+//    @IBAction func startButton(_ sender: UIButton) {
+//        let DMFindingGameViewController = DMFindingGameViewController()
+//            navigationController?.pushViewController(DMFindingGameViewController, animated: true)
+//
+//    }
 }

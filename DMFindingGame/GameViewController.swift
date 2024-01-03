@@ -64,6 +64,7 @@ class DMFindingGameViewController: UIViewController {
                 timer.invalidate()
                 navigationController?.popToRootViewController(animated: true)
             }
+
     }
     
     
