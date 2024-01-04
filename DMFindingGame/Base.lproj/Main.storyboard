@@ -37,6 +37,17 @@
                                     <segue destination="cLM-BX-Ev8" kind="show" id="05V-AH-HOD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kn-6w-Li0">
+                                <rect key="frame" x="128" y="727" width="134" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="See All Scores">
+                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="a83-Xv-0Wc" kind="presentation" id="jiN-8Q-XQJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QBz-AR-JGJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -314,6 +325,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y7B-Su-2TV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-620" y="16.350710900473931"/>
+        </scene>
+        <!--Score View Controller-->
+        <scene sceneID="jX0-X5-xTb">
+            <objects>
+                <viewController id="a83-Xv-0Wc" customClass="ScoreViewController" customModule="RandomButtonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QuI-fi-UOP">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vpM-Xt-WvI">
+                                <rect key="frame" x="0.0" y="81.666666666666686" width="390" height="752.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="scoreCell" id="r9v-SF-ri9">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r9v-SF-ri9" id="zos-ws-IsC">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqC-3r-Wzw">
+                                <rect key="frame" x="31" y="18" width="328" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BeU-HX-l6a"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WqC-3r-Wzw" firstAttribute="centerX" secondItem="QuI-fi-UOP" secondAttribute="centerX" id="8dz-QJ-QiK"/>
+                            <constraint firstItem="vpM-Xt-WvI" firstAttribute="trailing" secondItem="BeU-HX-l6a" secondAttribute="trailing" id="9ST-cd-mqA"/>
+                            <constraint firstItem="vpM-Xt-WvI" firstAttribute="leading" secondItem="BeU-HX-l6a" secondAttribute="leading" id="BIC-JR-gNF"/>
+                            <constraint firstItem="vpM-Xt-WvI" firstAttribute="top" secondItem="WqC-3r-Wzw" secondAttribute="bottom" constant="30" id="Dzs-BP-Hxb"/>
+                            <constraint firstItem="WqC-3r-Wzw" firstAttribute="top" secondItem="QuI-fi-UOP" secondAttribute="topMargin" constant="18" id="KPo-TA-bvz"/>
+                            <constraint firstItem="WqC-3r-Wzw" firstAttribute="leading" secondItem="QuI-fi-UOP" secondAttribute="leadingMargin" constant="15" id="Pos-Lg-mYh"/>
+                            <constraint firstItem="vpM-Xt-WvI" firstAttribute="bottom" secondItem="BeU-HX-l6a" secondAttribute="bottom" id="o1C-Pj-igc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="D0q-g8-QwH"/>
+                    <connections>
+                        <outlet property="tableView" destination="vpM-Xt-WvI" id="1AW-Oy-vpZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3X6-Nh-eFR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397" y="755"/>
         </scene>
     </scenes>
     <resources>
