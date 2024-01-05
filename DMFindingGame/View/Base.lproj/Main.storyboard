@@ -369,7 +369,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="D0q-g8-QwH"/>
                     <connections>
-                        <outlet property="tableView" destination="vpM-Xt-WvI" id="1AW-Oy-vpZ"/>
+                        <outlet property="tableView" destination="vpM-Xt-WvI" id="rs1-YY-Mwd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3X6-Nh-eFR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
